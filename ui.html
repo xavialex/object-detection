@@ -36,16 +36,16 @@ body, html {height: 100%}
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
-        // Loading room temperature
+        // Loading number of persons detected
         setInterval(function() {
-                $.ajax("/alarms").then(function(alarms) {
-                    if(alarms == "None") {
-                        $("#A").text("No alerts to display");
-                    }
-                    else {
-                        $("#A").text(alarms);
-                    }
-                });
+            $.ajax("/total").then(function(num_detections) {
+                if(Number(num_detections) == 1) {
+                    $("#A").text(num_detections + " person detected");
+                }
+                else {
+                    $("#A").text(num_detections + " persons detected");
+                }
+            });
         }, 500);
         
         // Detection image toggle mechanism
