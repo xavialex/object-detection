@@ -6,18 +6,18 @@ This project contains a script and an executable that performs person detection 
 
 Running the executable provided in *app/* avoids worrying about dependencies. See the **Use** section below for more information.
 
-It's also possible to run the source script in Python. If you're a conda user, you can create an environment from the ```danger_prevention_env.yml``` file using the Terminal or an Anaconda Prompt for the following steps:
+It's also possible to run the source script in Python. If you're a conda user, you can create an environment from the ```environment.yml``` file using the Terminal or an Anaconda Prompt for the following steps:
 
-1. Create the environment from the ```danger_prevention_env.yml``` file:
+1. Create the environment from the ```environment.yml``` file:
 
-    ```conda env create -f danger_prevention_env.yml```
+    ```conda env create -f environment.yml```
 2. Activate the new environment:
-    > * Windows: ```activate danger_prevention```
-    > * macOS and Linux: ```source activate danger_prevention``` 
+    > * Windows: ```activate object-detection```
+    > * macOS and Linux: ```source activate object-detection``` 
 
 3. Verify that the new environment was installed correctly:
 
-    ```conda list```
+    ```conda env list```
     
 You can also clone the environment through the environment manager of Anaconda Navigator.
 
